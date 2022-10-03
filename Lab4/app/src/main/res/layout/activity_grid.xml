@@ -4,12 +4,10 @@
     android:id="@+id/grid_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="1"
-    android:rowCount="8"
-    android:layout_marginRight="10dp"
     android:layout_marginLeft="10dp"
-
-    >
+    android:layout_marginRight="10dp"
+    android:columnCount="1"
+    android:rowCount="10">
 
     <TextView
         android:layout_gravity="center"
@@ -21,30 +19,23 @@
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="20"
-        android:layout_marginBottom="20dp"
-        android:columnCount="2"
-        android:rowCount="1"
-      >
+        android:horizontalSpacing="10dp">
 
         <EditText
-            android:layout_columnWeight="10"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingRight="25dp"
-            android:text="@string/first_name"
-            android:textSize="20sp"
-            android:inputType="text"
-            android:autofillHints="" />
+            android:layout_marginBottom="20dp"
+            android:text="@string/first_name" />
 
         <EditText
-            android:layout_columnWeight="10"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingRight="25dp"
-            android:text="@string/last_name"
-            android:textSize="20sp"
-            android:inputType="text"/>
+            android:layout_marginBottom="20dp"
+            android:text="@string/last_name" />
     </GridLayout>
+
 
     <EditText
         android:layout_width="match_parent"
@@ -78,19 +69,26 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:text="@string/confirm_password" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/a_valid_password_has_at_least_8_characters_and_includes_at_lease_one_uppercase_letter_one_lowercase_letter_one_number_and_one_special_character"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:text="@string/a_valid_password_has_at_least_8_characters_and_includes_at_lease_one_uppercase_letter_one_lowercase_letter_one_number_and_one_special_character" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/create_account"
         android:textSize="25sp"
-        android:layout_gravity="center"
+        android:background="#673AB7"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/white"
+
 
         />
+
 </GridLayout>

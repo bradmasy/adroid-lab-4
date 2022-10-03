@@ -44,4 +44,24 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, RelativeLayoutForm.class);
         startActivity(intent);
     }
+
+    public void goToLinear(View view){
+        Intent intent = new Intent(MainActivity.this, LinearLayoutForm.class);
+        startActivity(intent);
+    }
+
+    public void goToGrid(View view){
+        Intent intent = new Intent(MainActivity.this, GridLayoutForm.class);
+        startActivity(intent);
+    }
+
+    public void goToTable(View view){
+        Intent intent = new Intent(MainActivity.this, TableLayoutForm.class);
+        startActivity(intent);
+    }
+
+    public void goToConstraint(View view){
+        Intent intent = new Intent(MainActivity.this, ConstraintLayoutForm.class);
+        startActivity(intent);
+    }
 }
